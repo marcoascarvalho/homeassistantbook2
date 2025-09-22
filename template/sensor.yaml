@@ -1,0 +1,16 @@
+- name: "Total Energy Consumption - WiFi"
+  unit_of_measurement: "kwh"
+  state: >
+    {{ states('sensor.dishwasher_energy_today') | float +
+       states('sensor.refrigerator_energy_today') | float +
+       states('sensor.refrigerator_garage_energy_today') | float +
+       states('sensor.airfryer_energy_today') | float +
+       states('sensor.coffee_machine_energy_today') | float +
+       states('sensor.toaster_energy_today') | float +
+       states('sensor.microwave_energy_today') | float }}
+
+- name: "Hourly Energy Consumption - WiFi+Zigbee"
+  unit_of_measurement: "kwh"
+  state: >
+    {{ states('sensor.hourly_total_energy_wifi') | float +
+       states('sensor.hourly_total_energy_zigbee') | float }}

@@ -1,0 +1,98 @@
+{
+    "0x0ceff6fffef109d4": {
+        "battery": 100,
+        "voltage": 3000,
+        "update": {
+            "state": "idle",
+            "installed_version": 8704,
+            "latest_version": 8704
+        },
+        "contact": true,
+        "battery_low": false,
+        "linkquality": 216,
+        "tamper": false
+    },
+    "0x00158d008b14ebaa": {
+        "voltage": 3035,
+        "battery": 100,
+        "device_temperature": 28,
+        "power_outage_count": 78,
+        "linkquality": 216
+    },
+    "0x282c02bfffecb20e": {
+        "voltage": 121.5,
+        "ac_frequency": 60,
+        "update": {
+            "state": "available",
+            "installed_version": 268513372,
+            "latest_version": 268513378
+        },
+        "energy": 18.69,
+        "power_on_behavior": "previous",
+        "power_factor": 0,
+        "current": 0,
+        "power": 0,
+        "state": "ON",
+        "linkquality": 252
+    },
+    "0x282c02bfffee1590": {
+        "power": 1.1,
+        "current": 0.02,
+        "power_factor": 0.45,
+        "energy": 73.19,
+        "state": "ON",
+        "voltage": 120.6,
+        "linkquality": 255,
+        "ac_frequency": 60,
+        "power_on_behavior": "previous",
+        "update": {
+            "state": "available",
+            "installed_version": 268513360,
+            "latest_version": 268513376
+        }
+    },
+    "0x282c02bfffecabdf": {
+        "voltage": 121.7,
+        "ac_frequency": 60,
+        "update": {
+            "state": "available",
+            "installed_version": 268513360,
+            "latest_version": 268513378
+        },
+        "energy": 43.97,
+        "state": "ON",
+        "power": 0,
+        "current": 0,
+        "power_factor": 0,
+        "linkquality": 212
+    },
+    "0x282c02bfffecb2c5": {
+        "voltage": 122.7,
+        "ac_frequency": 60,
+        "update": {
+            "state": "available",
+            "installed_version": 268513372,
+            "latest_version": 268513378
+        },
+        "energy": 20.67,
+        "state": "ON",
+        "power": 2.4,
+        "current": 0.04,
+        "power_factor": 0.45,
+        "linkquality": 140
+    },
+    "0xa4c1382578014ea8": {
+        "battery": 100,
+        "occupancy": false,
+        "sensitivity": "high",
+        "linkquality": 136,
+        "keep_time": "10"
+    },
+    "0xa4c1381290260ed2": {
+        "battery": 100,
+        "occupancy": false,
+        "linkquality": 252,
+        "sensitivity": "low",
+        "keep_time": 30
+    }
+}

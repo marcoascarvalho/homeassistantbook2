@@ -1,0 +1,354 @@
+- id: '1676779591110'
+  name: ALL OFF
+  entities:
+    switch.desk_outlet:
+      friendly_name: Desk outlet
+      state: 'off'
+    light.garagelights:
+      supported_color_modes:
+      - onoff
+      friendly_name: GarageLights
+      supported_features: 0
+      state: 'off'
+    light.backyard_light1:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      effect:
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      raw_state: false
+      friendly_name: Backyard Light1
+      supported_features: 23
+      state: 'off'
+    light.backyard_light2:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light2
+      supported_features: 23
+      state: unavailable
+    switch.1001802b8a_1:
+      restored: false
+      supported_features: 0
+      friendly_name: Vitor plug-1
+      state: 'on'
+  icon: mdi:home-off
+  metadata:
+    switch.desk_outlet:
+      entity_only: true
+    light.garagelights:
+      entity_only: true
+    light.backyard_light1:
+      entity_only: true
+    light.backyard_light2:
+      entity_only: true
+    switch.1001802b8a_1:
+      entity_only: true
+- id: '1708400325118'
+  name: ALL ON
+  entities:
+    light.backyard_light1:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      effect: Shine
+      color_mode: unknown
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      raw_state: true
+      friendly_name: Backyard Light1
+      supported_features: 23
+      state: 'on'
+    light.backyard_light2:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light2
+      supported_features: 23
+      state: unavailable
+    switch.desk_outlet:
+      friendly_name: Desk outlet
+      state: 'on'
+    switch.1001802b8a_1:
+      restored: false
+      supported_features: 0
+      friendly_name: Vitor plug-1
+      state: 'on'
+  icon: mdi:home-lightbulb
+  metadata:
+    switch.1001802b8a_1:
+      entity_only: true
+- id: '1708400639669'
+  name: IOT Show Scene
+  entities:
+    light.backyard_light1:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light1
+      supported_features: 23
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 237
+      - 100
+      rgb_color:
+      - 0
+      - 12
+      - 255
+      xy_color:
+      - 0.136
+      - 0.042
+      raw_state: true
+      state: 'on'
+    light.backyard_light2:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light2
+      supported_features: 23
+      color_mode:
+      brightness:
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      rgb_color:
+      xy_color:
+      raw_state: false
+      state: 'off'
+    switch.desk_outlet:
+      friendly_name: Desk outlet
+      state: 'on'
+  icon: mdi:podcast
+  metadata: {}
+- id: '1708400914793'
+  name: ALL RED
+  entities:
+    light.backyard_light1:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light1
+      supported_features: 23
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 355
+      - 98
+      rgb_color:
+      - 255
+      - 5
+      - 25
+      xy_color:
+      - 0.693
+      - 0.297
+      raw_state: true
+      effect:
+      color_temp_kelvin:
+      color_temp:
+      state: 'on'
+    light.backyard_light2:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light2
+      supported_features: 23
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 356
+      - 100
+      rgb_color:
+      - 255
+      - 0
+      - 16
+      xy_color:
+      - 0.697
+      - 0.298
+      raw_state: true
+      color_temp_kelvin:
+      color_temp:
+      state: 'on'
+    switch.desk_outlet:
+      friendly_name: Desk outlet
+      state: 'off'
+  icon: mdi:bed
+  metadata: {}
+- id: '1717870803144'
+  name: Smart Home Makers Scene
+  entities:
+    light.backyard_light1:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      effect:
+      color_mode: hs
+      brightness: 255
+      color_temp_kelvin:
+      color_temp:
+      hs_color:
+      - 237
+      - 100
+      rgb_color:
+      - 0
+      - 12
+      - 255
+      xy_color:
+      - 0.136
+      - 0.042
+      raw_state: true
+      friendly_name: Backyard Light1
+      supported_features: 23
+      state: 'on'
+    light.backyard_light2:
+      min_color_temp_kelvin: 2702
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 370
+      effect_list:
+      - Night
+      - Read
+      - Meeting
+      - Leasure
+      - Soft
+      - Rainbow
+      - Shine
+      - Beautiful
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: Backyard Light2
+      supported_features: 23
+      state: unavailable
+    switch.desk_outlet:
+      friendly_name: Desk outlet
+      state: 'on'
+  icon: mdi:podcast
+  metadata: {}

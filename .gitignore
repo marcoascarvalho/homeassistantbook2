@@ -1,0 +1,5 @@
+/onlineBackupsData/
+.storage/
+secrets.yaml
+*.db
+*.log

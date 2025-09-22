@@ -1,0 +1,196 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+homeassistant:
+  packages: !include_dir_merge_named packages/
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+# Domain-centric includes
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+sensor: !include_dir_merge_list sensors/
+group: !include_dir_merge_named group/
+template: !include_dir_named template/
+mqtt: !include_dir_named mqtt/
+
+#sensor: !include_dir_list sensors/
+#sensor: !include sensor.yaml
+#group: !include_dir_merge_named group/
+
+#mqtt:
+
+#    # PIR Sensors
+#    binary_sensor:
+#      - unique_id: binary_sensor.garage_pir
+#        name: "garage_pir Sensor"
+#        state_topic: "sensor/Garage_Temp_PIR/PIR1"
+#        qos: 1
+#        payload_on: "ON"
+#        payload_not_available: "OFF"
+#        device_class: motion
+#        
+#      - unique_id: binary_sensor.bed_pir
+#        name: "bed_pir Sensor"
+#        state_topic: "sensor/Bed_PIR/PIR1"
+#        qos: 1
+#        payload_on: "ON"
+#        payload_not_available: "OFF"
+#        device_class: motion    
+      
+#      #- &mqtt_motion_defaults
+#      #  qos: 1
+#      #  payload_on: "ON"
+#      #  payload_off: "OFF"
+#      #  device_class: motion
+#    
+#      #- <<: *mqtt_motion_defaults
+#      #  unique_id: binary_sensor.garage_pir
+#      #  name: "garage_pir Sensor"
+#      #  state_topic: "sensor/Garage_Temp_PIR/PIR1"
+#        
+#      #- <<: *mqtt_motion_defaults
+#      #  unique_id: binary_sensor.bed_pir
+#      #  name: "bed_pir Sensor"
+#      #  state_topic: "sensor/Bed_PIR/PIR1"
+#
+#    sensor:
+#      - &bt_temperature_sensor
+#        state_topic: "tele/ESP32_TEMPERATURE_HUB/SENSOR"
+#        icon: mdi:thermometer-bluetooth
+#        unit_of_measurement: "°C"
+#        device_class: temperature 
+        
+#      - <<: *bt_temperature_sensor  
+#        name: "Backyard Temperature"
+#        value_template: '{{ value_json.ATC19f133.Temperature }}'
+#
+#      - <<: *bt_temperature_sensor 
+#        name: "Kid1_room Temperature"
+#        value_template: '{{ value_json.ATC6570e7.Temperature }}'
+#
+#      - <<: *bt_temperature_sensor
+#        name: "Kid2_room Temperature"
+#        value_template: '{{ value_json.ATC969ab4.Temperature }}'
+#        
+#      - <<: *bt_temperature_sensor
+#        name: "kitchen Temperature"
+#        value_template: '{{ value_json.ATCad7637.Temperature }}'
+        
+#      - <<: *bt_temperature_sensor
+#        name: "Master Bedroom Temperature"
+#        value_template: '{{ value_json.ATC5d22d1.Temperature }}'
+#        
+#      - name: "Energy Peak Hour"
+#        state_topic: "home/energy/peak_hour"
+#        unit_of_measurement: "kWh"
+#        value_template: '{{ value_json.peakHour }}'
+#        json_attributes_topic: "home/energy/peak_hour"
+#        json_attributes_template: >
+#          {
+#            "hour": "{{ value_json.hour }}",
+#            "friendly_name": "{{ value_json.friendly_name }}"
+#          }
+#
+#      - name: "Hourly Total Energy - Wifi"
+#        state_topic: "home/energy/total_hour"
+#        unit_of_measurement: "kWh"
+#        value_template: '{{ value_json.totalHour }}'
+#        json_attributes_topic: "home/energy/total_hour"
+#        json_attributes_template: >
+#          {
+#            "hour": "{{ value_json.hour }}",
+#            "friendly_name": "{{ value_json.friendly_name }}"
+#          }
+#       
+#      - name: "Energy Peak Hour - Zigbee"
+#        state_topic: "home/energy/z_peak_hour"
+#        unit_of_measurement: "kWh"
+#        value_template: '{{ value_json.z_peakHour }}'
+#        json_attributes_topic: "home/energy/z_peak_hour"
+#        json_attributes_template: >
+#          {
+#            "hour": "{{ value_json.z_hour }}",
+#            "friendly_name": "{{ value_json.friendly_name }}"
+#          }
+#          
+#      - name: "Hourly Total Energy - Zigbee"
+#        state_topic: "home/energy/z_total_hour"
+#        unit_of_measurement: "kWh"
+#        value_template: '{{ value_json.z_totalHour }}'
+#        json_attributes_topic: "home/energy/z_total_hour"
+#        json_attributes_template: >
+#          {
+#            "hour": "{{ value_json.z_hour }}",
+#            "friendly_name": "{{ value_json.friendly_name }}"
+#          }          
+          
+
+#template:
+#    sensor:
+#      - name: "Total Energy Consumption - WiFi"
+#        unit_of_measurement: "kwh"
+#        state: >
+#          {{ states('sensor.dishwasher_energy_today') | float +
+#             states('sensor.refrigerator_energy_today') | float +
+#             states('sensor.refrigerator_garage_energy_today') | float +
+#             states('sensor.airfryer_energy_today') | float +
+#             states('sensor.coffee_machine_energy_today') | float +
+#             states('sensor.toaster_energy_today') | float +
+#             states('sensor.microwave_energy_today') | float }}
+
+#      - name: "Hourly Energy Consumption - WiFi+Zigbee"
+#        unit_of_measurement: "kwh"
+#        state: >
+#          {{ states('sensor.hourly_total_energy_wifi') | float +
+#             states('sensor.hourly_total_energy_zigbee') | float }}
+    
+#    binary_sensor:
+#      - name: "AirFryer Running"
+#        delay_off:
+#          minutes: 5
+#        state: >
+#          {{ states('sensor.airfryer_energy_current')|float > 0 }}
+
+#      - name: "Dishwasher Running"
+#        delay_off:
+#          minutes: 5
+#        state: >
+#          {{ states('sensor.dishwasher_energy_current')|float > 0 }}
+          
+#      - name: "Wash Machine Running"
+#        delay_off:
+#          minutes: 5
+#        state: >
+#         {{ states('sensor.z_washing_machine_power')|float > 0 }}      
+
+#sensor:    
+#  - platform: time_date
+#    display_options:
+#    - 'date_time'
+
+#  - platform: worldclock
+#    time_zone: America/Sao_Paulo
+    
+# it doesn't work for sensors
+#emulated_hue:
+#    type: alexa
+#    host_ip: 192.168.0.32
+#    listen_port: 80
+#    expose_by_default: false
+#    entities:
+#      binary_sensor.z_mb_pir_aisle_occupancy:
+#        name: "MB Motion Detector"
+#        hidden: false
+        
+
+#http: 
+# ssl_certificate: /ssl/fullchain.pem 
+# ssl_key: /ssl/privkey.pem

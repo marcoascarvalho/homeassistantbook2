@@ -1,0 +1,550 @@
+2025-09-21 12:19:03.498 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-09-21 12:19:03.501 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration tapo_control which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-09-21 12:19:03.502 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration localtuya which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-09-21 12:19:03.504 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration dual_measurement_sensor which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-09-21 12:19:03.506 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spook which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-09-21 12:19:13.204 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/__init__.py:2: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__('pkg_resources').declare_namespace(__name__)
+
+2025-09-21 12:19:14.159 WARNING (MainThread) [custom_components.localtuya.light] [eb5...eis] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.160 WARNING (MainThread) [custom_components.localtuya.light] [eb5...eis] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.160 WARNING (MainThread) [custom_components.localtuya.light] [eb5...eis] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.161 WARNING (MainThread) [custom_components.localtuya.light] [eb5...eis] Entity light.vitor_strip_lights is requesting unknown DPS index 21
+2025-09-21 12:19:14.161 WARNING (MainThread) [custom_components.localtuya.light] [eb5...eis] Entity light.vitor_strip_lights is requesting unknown DPS index 21
+2025-09-21 12:19:14.161 WARNING (MainThread) [custom_components.localtuya.light] [eb5...eis] Entity light.vitor_strip_lights is requesting unknown DPS index 21
+2025-09-21 12:19:14.163 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'localtuya' is using mireds for warmest light color temperature, when it should be adjusted to use the kelvin attribute `_attr_min_color_temp_kelvin` or override the kelvin property `min_color_temp_kelvin`, possibly with default DEFAULT_MIN_KELVIN (see https://github.com/home-assistant/core/pull/79591). This will stop working in Home Assistant 2026.1, please create a bug report at https://github.com/rospogrigio/localtuya/issues
+2025-09-21 12:19:14.163 WARNING (MainThread) [homeassistant.helpers.frame] Detected that custom integration 'localtuya' is using mireds for coldest light color temperature, when it should be adjusted to use the kelvin attribute `_attr_max_color_temp_kelvin` or override the kelvin property `max_color_temp_kelvin`, possibly with default DEFAULT_MAX_KELVIN (see https://github.com/home-assistant/core/pull/79591). This will stop working in Home Assistant 2026.1, please create a bug report at https://github.com/rospogrigio/localtuya/issues
+2025-09-21 12:19:14.164 WARNING (MainThread) [custom_components.localtuya.light] [eb8...ko9] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.164 WARNING (MainThread) [custom_components.localtuya.light] [eb8...ko9] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.164 WARNING (MainThread) [custom_components.localtuya.light] [eb8...ko9] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.165 WARNING (MainThread) [custom_components.localtuya.light] [eb8...ko9] Entity light.backyard_light1 is requesting unknown DPS index 21
+2025-09-21 12:19:14.165 WARNING (MainThread) [custom_components.localtuya.light] [eb8...ko9] Entity light.backyard_light1 is requesting unknown DPS index 21
+2025-09-21 12:19:14.165 WARNING (MainThread) [custom_components.localtuya.light] [eb8...ko9] Entity light.backyard_light1 is requesting unknown DPS index 21
+2025-09-21 12:19:14.166 WARNING (MainThread) [custom_components.localtuya.light] [ebd...ugp] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.166 WARNING (MainThread) [custom_components.localtuya.light] [ebd...ugp] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.167 WARNING (MainThread) [custom_components.localtuya.light] [ebd...ugp] Entity None is requesting unknown DPS index 21
+2025-09-21 12:19:14.167 WARNING (MainThread) [custom_components.localtuya.light] [ebd...ugp] Entity light.backyard_light2 is requesting unknown DPS index 21
+2025-09-21 12:19:14.168 WARNING (MainThread) [custom_components.localtuya.light] [ebd...ugp] Entity light.backyard_light2 is requesting unknown DPS index 21
+2025-09-21 12:19:14.168 WARNING (MainThread) [custom_components.localtuya.light] [ebd...ugp] Entity light.backyard_light2 is requesting unknown DPS index 21
+2025-09-21 12:19:14.203 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:19:14.336 WARNING (SyncWorker_1) [custom_components.localtuya.light] [eb5...eis] Entity light.vitor_strip_lights is requesting unset index for option brightness
+2025-09-21 12:19:14.336 WARNING (SyncWorker_1) [custom_components.localtuya.light] [eb5...eis] Entity light.vitor_strip_lights is requesting unknown DPS index None
+2025-09-21 12:19:21.012 ERROR (MainThread) [homeassistant.components.alarm_control_panel] Platform blink does not generate unique IDs. ID G8V190001132850M already exists - ignoring alarm_control_panel.blink_theo_monitor
+2025-09-21 12:19:21.012 ERROR (MainThread) [homeassistant.components.alarm_control_panel] Platform blink does not generate unique IDs. ID G8V190013076ADCC already exists - ignoring alarm_control_panel.blink_kitchen_camera
+2025-09-21 12:19:21.014 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform blink does not generate unique IDs. ID G8V190001132850M-battery already exists - ignoring binary_sensor.blink_theo_monitor_battery
+2025-09-21 12:19:21.015 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform blink does not generate unique IDs. ID G8V190001132850M-motion_enabled already exists - ignoring binary_sensor.blink_theo_monitor_camera_armed
+2025-09-21 12:19:21.015 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform blink does not generate unique IDs. ID G8V190001132850M-motion_detected already exists - ignoring binary_sensor.blink_theo_monitor_motion_detected
+2025-09-21 12:19:21.015 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform blink does not generate unique IDs. ID G8V190013076ADCC-battery already exists - ignoring binary_sensor.blink_kitchen_camera_battery
+2025-09-21 12:19:21.016 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform blink does not generate unique IDs. ID G8V190013076ADCC-motion_enabled already exists - ignoring binary_sensor.blink_kitchen_camera_camera_armed
+2025-09-21 12:19:21.016 ERROR (MainThread) [homeassistant.components.binary_sensor] Platform blink does not generate unique IDs. ID G8V190013076ADCC-motion_detected already exists - ignoring binary_sensor.blink_kitchen_camera_motion_detected
+2025-09-21 12:19:21.018 ERROR (MainThread) [homeassistant.components.camera] Platform blink does not generate unique IDs. ID G8V190001132850M-camera already exists - ignoring camera.blink_theo_monitor
+2025-09-21 12:19:21.018 ERROR (MainThread) [homeassistant.components.camera] Platform blink does not generate unique IDs. ID G8V190013076ADCC-camera already exists - ignoring camera.blink_kitchen_camera
+2025-09-21 12:19:21.020 ERROR (MainThread) [homeassistant.components.sensor] Platform blink does not generate unique IDs. ID G8V190001132850M-temperature already exists - ignoring sensor.blink_theo_monitor_temperature
+2025-09-21 12:19:21.021 ERROR (MainThread) [homeassistant.components.sensor] Platform blink does not generate unique IDs. ID G8V190001132850M-wifi_strength already exists - ignoring sensor.blink_theo_monitor_wifi_signal
+2025-09-21 12:19:21.021 ERROR (MainThread) [homeassistant.components.sensor] Platform blink does not generate unique IDs. ID G8V190013076ADCC-temperature already exists - ignoring sensor.blink_kitchen_camera_temperature
+2025-09-21 12:19:21.022 ERROR (MainThread) [homeassistant.components.sensor] Platform blink does not generate unique IDs. ID G8V190013076ADCC-wifi_strength already exists - ignoring sensor.blink_kitchen_camera_wifi_signal
+2025-09-21 12:19:21.023 ERROR (MainThread) [homeassistant.components.switch] Platform blink does not generate unique IDs. ID G8V190001132850M-motion_enabled already exists - ignoring switch.theo_monitor_camera_motion_detection
+2025-09-21 12:19:21.024 ERROR (MainThread) [homeassistant.components.switch] Platform blink does not generate unique IDs. ID G8V190013076ADCC-motion_enabled already exists - ignoring switch.kitchen_camera_camera_motion_detection
+2025-09-21 12:19:27.444 ERROR (MainThread) [homeassistant.helpers.event] Error while processing template: Template<template=({{ states('sensor.z_washing_machine_power')|float > 0 }}) renders=2>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2443, in forgiving_float_filter
+    return float(value)
+ValueError: could not convert string to float: 'unknown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 644, in async_render
+    render_result = _render_with_context(self.template, compiled, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2969, in _render_with_context
+    return template.render(**kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<template>", line 1, in top-level template code
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2446, in forgiving_float_filter
+    raise_no_default("float", value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 1972, in raise_no_default
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('sensor.z_washing_machine_power')|float > 0 }}' but no default was specified
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 761, in async_render_to_info
+    render_info._result = self.async_render(  # noqa: SLF001
+                          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        variables, strict=strict, log_fn=log_fn, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 646, in async_render
+    raise TemplateError(err) from err
+homeassistant.exceptions.TemplateError: ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('sensor.z_washing_machine_power')|float > 0 }}' but no default was specified
+2025-09-21 12:19:27.456 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('sensor.z_washing_machine_power')|float > 0 }}' but no default was specified') while processing template 'Template<template=({{ states('sensor.z_washing_machine_power')|float > 0 }}) renders=4>' for attribute '_state' in entity 'binary_sensor.wash_machine_running'
+2025-09-21 12:19:27.459 ERROR (MainThread) [homeassistant.helpers.event] Error while processing template: Template<template=({{ states('sensor.hourly_total_energy_wifi') | float +
+   states('sensor.hourly_total_energy_zigbee') | float }}) renders=2>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2443, in forgiving_float_filter
+    return float(value)
+ValueError: could not convert string to float: 'unknown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 644, in async_render
+    render_result = _render_with_context(self.template, compiled, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2969, in _render_with_context
+    return template.render(**kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<template>", line 1, in top-level template code
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2446, in forgiving_float_filter
+    raise_no_default("float", value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 1972, in raise_no_default
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('sensor.hourly_total_energy_wifi') | float +
+   states('sensor.hourly_total_energy_zigbee') | float }}' but no default was specified
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 761, in async_render_to_info
+    render_info._result = self.async_render(  # noqa: SLF001
+                          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        variables, strict=strict, log_fn=log_fn, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 646, in async_render
+    raise TemplateError(err) from err
+homeassistant.exceptions.TemplateError: ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('sensor.hourly_total_energy_wifi') | float +
+   states('sensor.hourly_total_energy_zigbee') | float }}' but no default was specified
+2025-09-21 12:19:27.468 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('sensor.hourly_total_energy_wifi') | float +
+   states('sensor.hourly_total_energy_zigbee') | float }}' but no default was specified') while processing template 'Template<template=({{ states('sensor.hourly_total_energy_wifi') | float +
+   states('sensor.hourly_total_energy_zigbee') | float }}) renders=4>' for attribute '_attr_native_value' in entity 'sensor.hourly_energy_consumption_wifi_zigbee'
+2025-09-21 12:20:13.173 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:20:17.693 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:21:13.168 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:21:29.360 WARNING (MainThread) [custom_components.localtuya.common] [ebd...ugp] Failed to connect to 192.168.0.38: [Errno 110] Connect call failed ('192.168.0.38', 6668)
+2025-09-21 12:22:13.334 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:22:37.250 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:22:37.252 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:22:37.254 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:22:37.256 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:22:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.0,"Humidity":41.6,"DewPoint":11.1,"Btn":0,"Battery":74,"RSSI":-84},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.3,"Humidity":37.9,"DewPoint":9.9,"Btn":0,"Battery":69,"RSSI":-89},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:22:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.0,"Humidity":41.6,"DewPoint":11.1,"Btn":0,"Battery":74,"RSSI":-84},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.3,"Humidity":37.9,"DewPoint":9.9,"Btn":0,"Battery":69,"RSSI":-89},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:22:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.0,"Humidity":41.6,"DewPoint":11.1,"Btn":0,"Battery":74,"RSSI":-84},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.3,"Humidity":37.9,"DewPoint":9.9,"Btn":0,"Battery":69,"RSSI":-89},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:22:38.184 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:22:38.186 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:22:38.188 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:22:38.192 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:22:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":23.9,"Humidity":44.4,"DewPoint":11.0,"Btn":0,"Battery":64,"RSSI":-83},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":71,"RSSI":-84},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:22:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":23.9,"Humidity":44.4,"DewPoint":11.0,"Btn":0,"Battery":64,"RSSI":-83},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":71,"RSSI":-84},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:22:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":23.9,"Humidity":44.4,"DewPoint":11.0,"Btn":0,"Battery":64,"RSSI":-83},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":71,"RSSI":-84},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:22:39.190 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:22:39.192 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:22:39.193 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:22:39.196 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:22:39.199 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:22:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.3,"Humidity":37.0,"DewPoint":15.7,"Battery":85,"RSSI":-87},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:22:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.3,"Humidity":37.0,"DewPoint":15.7,"Battery":85,"RSSI":-87},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:22:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.3,"Humidity":37.0,"DewPoint":15.7,"Battery":85,"RSSI":-87},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:23:13.354 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:23:20.716 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:24:13.172 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:24:27.536 WARNING (MainThread) [custom_components.localtuya.common] [ebd...ugp] Failed to connect to 192.168.0.38: [Errno 110] Connect call failed ('192.168.0.38', 6668)
+2025-09-21 12:25:13.203 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:26:13.227 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:26:23.825 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:27:13.176 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:27:27.760 WARNING (MainThread) [custom_components.localtuya.common] [ebd...ugp] Failed to connect to 192.168.0.38: [Errno 110] Connect call failed ('192.168.0.38', 6668)
+2025-09-21 12:27:37.167 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:27:37.169 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:27:37.171 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:27:37.174 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:27:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.2,"Humidity":41.5,"DewPoint":11.2,"Btn":0,"Battery":75,"RSSI":-82},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.4,"Humidity":37.9,"DewPoint":10.0,"Btn":0,"Battery":69,"RSSI":-87},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:27:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.2,"Humidity":41.5,"DewPoint":11.2,"Btn":0,"Battery":75,"RSSI":-82},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.4,"Humidity":37.9,"DewPoint":10.0,"Btn":0,"Battery":69,"RSSI":-87},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:27:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.2,"Humidity":41.5,"DewPoint":11.2,"Btn":0,"Battery":75,"RSSI":-82},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.4,"Humidity":37.9,"DewPoint":10.0,"Btn":0,"Battery":69,"RSSI":-87},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:27:38.118 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:27:38.121 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:27:38.123 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:27:38.126 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:27:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.0,"Humidity":44.6,"DewPoint":11.1,"Btn":0,"Battery":64,"RSSI":-83},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-84},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:27:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.0,"Humidity":44.6,"DewPoint":11.1,"Btn":0,"Battery":64,"RSSI":-83},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-84},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:27:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.0,"Humidity":44.6,"DewPoint":11.1,"Btn":0,"Battery":64,"RSSI":-83},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-84},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:27:39.160 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:27:39.162 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:27:39.164 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:27:39.168 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:27:39.171 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:27:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.5,"Humidity":37.0,"DewPoint":15.9,"Battery":85,"RSSI":-87},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:27:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.5,"Humidity":37.0,"DewPoint":15.9,"Battery":85,"RSSI":-87},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:27:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.5,"Humidity":37.0,"DewPoint":15.9,"Battery":85,"RSSI":-87},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:28:13.230 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:29:13.171 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:29:26.777 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:30:13.206 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:30:27.984 WARNING (MainThread) [custom_components.localtuya.common] [ebd...ugp] Failed to connect to 192.168.0.38: [Errno 110] Connect call failed ('192.168.0.38', 6668)
+2025-09-21 12:31:13.252 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:32:11.766 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.0.7 (192.168.0.7). Requested URL: '/auth/token'. (Home Assistant/2025.7.2 (io.robbie.HomeAssistant; build:2025.1356; iOS 18.6.2) Alamofire/5.8.0)
+2025-09-21 12:32:12.260 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.0.7 (192.168.0.7). Requested URL: '/auth/token'. (Home Assistant/2025.7.2 (io.robbie.HomeAssistant; build:2025.1356; iOS 18.6.2) Alamofire/5.8.0)
+2025-09-21 12:32:13.641 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:32:29.678 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:32:37.213 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:32:37.217 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:32:37.221 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:32:37.224 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:32:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.3,"Humidity":41.5,"DewPoint":11.3,"Btn":0,"Battery":75,"RSSI":-86},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.5,"Humidity":38.0,"DewPoint":10.1,"Btn":0,"Battery":70,"RSSI":-87},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:32:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.3,"Humidity":41.5,"DewPoint":11.3,"Btn":0,"Battery":75,"RSSI":-86},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.5,"Humidity":38.0,"DewPoint":10.1,"Btn":0,"Battery":70,"RSSI":-87},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:32:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.3,"Humidity":41.5,"DewPoint":11.3,"Btn":0,"Battery":75,"RSSI":-86},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.5,"Humidity":38.0,"DewPoint":10.1,"Btn":0,"Battery":70,"RSSI":-87},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:32:38.139 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:32:38.142 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:32:38.143 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:32:38.148 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:32:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.1,"Humidity":44.7,"DewPoint":11.3,"Btn":0,"Battery":65,"RSSI":-80},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-83},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:32:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.1,"Humidity":44.7,"DewPoint":11.3,"Btn":0,"Battery":65,"RSSI":-80},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-83},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:32:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.1,"Humidity":44.7,"DewPoint":11.3,"Btn":0,"Battery":65,"RSSI":-80},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.7,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-83},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:32:39.154 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:32:39.156 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:32:39.158 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:32:39.162 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:32:39.165 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:32:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.6,"Humidity":37.0,"DewPoint":16.0,"Battery":85,"RSSI":-86},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:32:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.6,"Humidity":37.0,"DewPoint":16.0,"Battery":85,"RSSI":-86},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:32:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.6,"Humidity":37.0,"DewPoint":16.0,"Battery":85,"RSSI":-86},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:33:13.175 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:33:28.208 WARNING (MainThread) [custom_components.localtuya.common] [ebd...ugp] Failed to connect to 192.168.0.38: [Errno 110] Connect call failed ('192.168.0.38', 6668)
+2025-09-21 12:34:13.229 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:35:13.176 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:35:32.969 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:36:13.386 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:36:28.432 WARNING (MainThread) [custom_components.localtuya.common] [ebd...ugp] Failed to connect to 192.168.0.38: [Errno 110] Connect call failed ('192.168.0.38', 6668)
+2025-09-21 12:37:13.438 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:37:37.253 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:37:37.254 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:37:37.257 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:37:37.260 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:37:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.4,"Humidity":41.6,"DewPoint":11.4,"Btn":0,"Battery":75,"RSSI":-84},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.6,"Humidity":38.1,"DewPoint":10.2,"Btn":0,"Battery":70,"RSSI":-85},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:37:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.4,"Humidity":41.6,"DewPoint":11.4,"Btn":0,"Battery":75,"RSSI":-84},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.6,"Humidity":38.1,"DewPoint":10.2,"Btn":0,"Battery":70,"RSSI":-85},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:37:36","ATCad7637":{"mac":"a4c138ad7637","Temperature":25.4,"Humidity":41.6,"DewPoint":11.4,"Btn":0,"Battery":75,"RSSI":-84},"ATC6570e7":{"mac":"a4c1386570e7","Temperature":25.6,"Humidity":38.1,"DewPoint":10.2,"Btn":0,"Battery":70,"RSSI":-85},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:37:38.179 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:37:38.182 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:37:38.184 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC19f133' when rendering '{{ value_json.ATC19f133.Temperature }}'
+2025-09-21 12:37:38.188 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:37:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.2,"Humidity":44.7,"DewPoint":11.4,"Btn":0,"Battery":64,"RSSI":-82},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.8,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-86},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:37:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.2,"Humidity":44.7,"DewPoint":11.4,"Btn":0,"Battery":64,"RSSI":-82},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.8,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-86},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:37:37","ATC969ab4":{"mac":"a4c138969ab4","Temperature":24.2,"Humidity":44.7,"DewPoint":11.4,"Btn":0,"Battery":64,"RSSI":-82},"ATC5d22d1":{"mac":"a4c1385d22d1","Temperature":25.9,"Humidity":43.8,"DewPoint":12.6,"Btn":0,"Battery":70,"RSSI":-86},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:37:39.196 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATCad7637' when rendering '{{ value_json.ATCad7637.Temperature }}'
+2025-09-21 12:37:39.197 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC5d22d1' when rendering '{{ value_json.ATC5d22d1.Temperature }}'
+2025-09-21 12:37:39.199 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC969ab4' when rendering '{{ value_json.ATC969ab4.Temperature }}'
+2025-09-21 12:37:39.201 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'dict object' has no attribute 'ATC6570e7' when rendering '{{ value_json.ATC6570e7.Temperature }}'
+2025-09-21 12:37:39.204 ERROR (MainThread) [homeassistant.components.mqtt.models] Exception raised while updating state of sensor.temperature, topic: 'tele/ESP32_TEMPERATURE_HUB/SENSOR' with payload: b'{"Time":"2025-09-21T20:37:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.5,"Humidity":36.0,"DewPoint":15.5,"Battery":85,"RSSI":-89},"TempUnit":"C"}'
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 666, in state
+    numerical_value = float(value)  # type:ignore[arg-type]
+ValueError: could not convert string to float: '{"Time":"2025-09-21T20:37:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.5,"Humidity":36.0,"DewPoint":15.5,"Battery":85,"RSSI":-89},"TempUnit":"C"}'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/models.py", line 366, in process_write_state_requests
+    entity.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1019, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1141, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1081, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1025, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/sensor/__init__.py", line 668, in state
+    raise ValueError(
+    ...<5 lines>...
+    ) from err
+ValueError: Sensor sensor.temperature has device class 'temperature', state class 'None' unit '°C' and suggested precision 'None' thus indicating it has a numeric value; however, it has the non-numeric value: '{"Time":"2025-09-21T20:37:38","ATC19f133":{"mac":"a4c13819f133","Temperature":32.5,"Humidity":36.0,"DewPoint":15.5,"Battery":85,"RSSI":-89},"TempUnit":"C"}' (<class 'str'>)
+2025-09-21 12:38:13.296 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:38:35.733 WARNING (MainThread) [ring_doorbell.doorbot] Your Ring account does not have an active subscription.
+2025-09-21 12:39:13.178 WARNING (MainThread) [custom_components.localtuya.common] [eb8...ko9] Failed to connect to 192.168.0.37: [Errno 111] Connect call failed ('192.168.0.37', 6668)
+2025-09-21 12:39:20.476 WARNING (MainThread) [homeassistant.runner] Task could not be canceled and was still running after shutdown: <Task cancelling name='Task-342' coro=<FcmPushClient._listen() running at /usr/local/lib/python3.13/site-packages/firebase_messaging/fcmpushclient.py:728> wait_for=<Future pending cb=[Task.task_wakeup()]>>

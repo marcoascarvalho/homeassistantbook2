@@ -1,0 +1,17 @@
+- name: "AirFryer Running"
+  delay_off:
+    minutes: 5
+  state: >
+    {{ states('sensor.airfryer_energy_current')|float > 0 }}
+
+- name: "Dishwasher Running"
+  delay_off:
+    minutes: 5
+  state: >
+    {{ states('sensor.dishwasher_energy_current')|float > 0 }}
+          
+- name: "Wash Machine Running"
+  delay_off:
+    minutes: 5
+  state: >
+    {{ states('sensor.z_washing_machine_power')|float > 0 }}      

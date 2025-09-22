@@ -1,0 +1,62 @@
+homeassistant: true
+advanced:
+  network_key:
+    - 242
+    - 97
+    - 62
+    - 21
+    - 139
+    - 55
+    - 25
+    - 87
+    - 36
+    - 109
+    - 47
+    - 205
+    - 71
+    - 150
+    - 23
+    - 131
+  pan_id: 39272
+  ext_pan_id:
+    - 142
+    - 145
+    - 238
+    - 176
+    - 62
+    - 182
+    - 197
+    - 164
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+mqtt:
+  server: mqtt://homeassistant.local:1883
+  user: your_name
+  password: your_password
+  base_topic: zigbee2mqtt
+frontend:
+  port: 8099
+serial:
+  port: >-
+    /dev/serial/by-id/usb-Itead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_V2_a64b47d59939ef11bd8c5df454516304-if00-port0
+  adapter: ember
+device_options:
+  legacy: false
+devices:
+  '0x0ceff6fffef109d4':
+    friendly_name: Z_Garage_Gate
+  '0x00158d008b14ebaa':
+    friendly_name: Z_button0
+  '0x282c02bfffecb20e':
+    friendly_name: Z_Kitchen_Outlet
+  '0x282c02bfffee1590':
+    friendly_name: Z_Computer_Outlet
+  '0x282c02bfffecabdf':
+    friendly_name: Z_Washing_Machine
+  '0x282c02bfffecb2c5':
+    friendly_name: Z_MasterBedroom_Outlet
+  '0xa4c1382578014ea8':
+    friendly_name: Z_MB_PIR_aisle
+  '0xa4c1381290260ed2':
+    friendly_name: Z_Theo_PIR_aisle

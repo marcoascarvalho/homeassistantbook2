@@ -1,0 +1,496 @@
+- id: '1676776939743'
+  alias: Automation 1
+  description: Turn on and off the Garage lights at night if a movement is detected
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.garage_pir_sensor
+  condition:
+  - condition: sun
+    after: sunset
+  action:
+  - service: light.turn_on
+    data: {}
+    target:
+      entity_id: light.garagelights
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.garagelights
+  mode: single
+- id: '1676777500364'
+  alias: Automation 2
+  description: Turn off the Screen Monitor plug in my kid’s room after 8:30PM on weekdays
+  trigger:
+  - platform: time
+    at: '20:30:00'
+  condition:
+  - condition: time
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  action:
+  - service: switch.turn_off
+    data: {}
+    target:
+      device_id: e9f3cf638163b4c94f453c0a103fa407
+  mode: single
+- id: '1676778448636'
+  alias: Automation 3 Blueprint
+  description: Automation 1 Blueprint example
+  use_blueprint:
+    path: Automation1_blueprint.yaml
+    input:
+      motion_sensor: binary_sensor.garage_pir_sensor
+      target_light:
+        entity_id: light.garagelights
+- id: '1676779040603'
+  alias: Automation 4
+  description: Turn off the Screen Monitor plug in my kid’s room after 8:30PM on weekdays
+  trigger:
+  - platform: time
+    at: '20:30:00'
+  condition: []
+  action:
+  - service: script.timeforbed
+    data: {}
+  mode: single
+- id: '1683004673810'
+  alias: LED_strip_controller
+  description: Control the LED Strip controller
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: 0
+  condition:
+  - condition: template
+    value_template: "{% if (now().month == 5 or now().month == 5) %}\n  true\n{% else
+      %}\n  false\n{% endif %}"
+  action:
+  - service: light.turn_on
+    data: {}
+    target:
+      device_id: b7dd623c10b090ec8dd727124d5344b2
+  - if:
+    - condition: template
+      value_template: "{% if now().month == 5 %}\n  true\n{% else %}\n  false\n{%
+        endif %}"
+    then:
+    - service: select.select_option
+      data:
+        option: Halloween
+      target:
+        entity_id: select.wled_playlist
+    else:
+    - service: select.select_option
+      data:
+        option: Christmas
+      target:
+        entity_id: select.wled_playlist
+  - delay:
+      hours: 4
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - service: light.turn_off
+    data: {}
+    target:
+      device_id: b7dd623c10b090ec8dd727124d5344b2
+  mode: single
+- id: '1683093884867'
+  description: ''
+  trigger: []
+  condition: []
+  action: []
+  mode: single
+- id: '1684728222376'
+  alias: Ios toggle mb fan
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: Control MB Fan
+  condition: []
+  action:
+  - service: switch.toggle
+    data: {}
+    target:
+      entity_id: switch.1001257d12
+  mode: single
+- id: '1691871523222'
+  alias: Automation 1 - sunrise
+  description: Turn on and off the Garage lights at day if a movement is detected
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.garage_pir_sensor
+  condition:
+  - condition: sun
+    after: sunrise
+  action:
+  - service: light.turn_on
+    data: {}
+    target:
+      entity_id: light.garagelights
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.garagelights
+  mode: single
+- id: '1708383536152'
+  alias: IOT Show 1
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.garage_pir_sensor
+    from: 'off'
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.all_off
+    data: {}
+  - service: light.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.garagelights
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - service: scene.turn_on
+    target:
+      entity_id: scene.iot_show_scene
+    data: {}
+  - service: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.garagelights
+  mode: single
+- id: '1717872148833'
+  alias: Smart Home Makers Automation
+  description: Done for Home Automation Live
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.bed_pir_sensor
+    from: 'off'
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.all_off
+    data: {}
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - service: scene.turn_on
+    data: {}
+    target:
+      entity_id: scene.smart_home_makers_scene
+  mode: single
+- id: '1734406674468'
+  alias: Garage Gate Open at Night
+  description: ''
+  triggers:
+  - type: opened
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    trigger: device
+  conditions:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  actions:
+  - type: turn_on
+    device_id: 92bc334c8a0b1030197c3fc7e0d35249
+    entity_id: 5451daf3c67cefa6865d25138794baac
+    domain: light
+  mode: single
+- id: '1734406907760'
+  alias: Garage Gate Closed at Night
+  description: ''
+  triggers:
+  - type: not_opened
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    trigger: device
+  conditions:
+  - condition: sun
+    after: sunset
+  - condition: and
+    conditions:
+    - condition: device
+      type: is_on
+      device_id: 92bc334c8a0b1030197c3fc7e0d35249
+      entity_id: 5451daf3c67cefa6865d25138794baac
+      domain: light
+  actions:
+  - type: turn_off
+    device_id: 92bc334c8a0b1030197c3fc7e0d35249
+    entity_id: 5451daf3c67cefa6865d25138794baac
+    domain: light
+  mode: single
+- id: '1734407422068'
+  alias: Garage gate Opened for 15 min
+  description: Send a notification to the phone if the Garage Gate is opened for more
+    than 15 minutes
+  triggers:
+  - type: opened
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+  conditions: []
+  actions:
+  - action: notify.mobile_app_iphone_381
+    metadata: {}
+    data:
+      message: Garage Gate Opened for 15 min
+      title: Garage Gate Opened - 15 min
+  - action: notify.mobile_app_iphone_9
+    metadata: {}
+    data:
+      message: Garage Gate Opened for 15 min
+      title: Garage Gate Opened - 15 min
+  mode: single
+- id: '1734407622180'
+  alias: Garage Gate Open Notification
+  description: ''
+  triggers:
+  - type: opened
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  conditions: []
+  actions:
+  - action: notify.mobile_app_iphone_381
+    metadata: {}
+    data:
+      message: Garage Gate Opened
+      title: Garage Gate Opened
+  - action: notify.mobile_app_iphone_9
+    metadata: {}
+    data:
+      title: Garage Gate Opened
+  mode: single
+- id: '1734407676448'
+  alias: Garage Gate Close Notification
+  description: ''
+  triggers:
+  - type: not_opened
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  conditions: []
+  actions:
+  - action: notify.mobile_app_iphone_381
+    metadata: {}
+    data:
+      message: Garage Gate Closed
+      title: Garage Gate Closed
+  mode: single
+- id: '1735152041645'
+  alias: Garage Gate Open/Close
+  description: ''
+  triggers:
+  - domain: mqtt
+    device_id: 57afb8a79e8b39ef738b49c94e98f75d
+    type: action
+    subtype: single
+    trigger: device
+  conditions: []
+  actions:
+  - action: script.turn_on_off_garagemotor_script
+    metadata: {}
+    data: {}
+    response_variable: GarageGate_OpenClose
+  mode: single
+- id: '1735153125595'
+  alias: GarageGate Open Iphone Marco Enter
+  description: ''
+  triggers:
+  - device_id: f409dadf2220ef83dc9a9c2466c16001
+    domain: device_tracker
+    entity_id: 9382ad6f666445925ae4d1f8cf817667
+    type: enters
+    trigger: device
+    zone: zone.home
+  conditions:
+  - type: is_not_open
+    condition: device
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 20
+      seconds: 0
+  actions:
+  - action: script.turn_on_off_garagemotor_script
+    metadata: {}
+    data: {}
+  mode: single
+- id: '1735153713326'
+  alias: GarageGate Close Iphone Marco Leave
+  description: ''
+  triggers:
+  - device_id: f409dadf2220ef83dc9a9c2466c16001
+    domain: device_tracker
+    entity_id: 9382ad6f666445925ae4d1f8cf817667
+    type: leaves
+    trigger: device
+    zone: zone.home
+  conditions:
+  - type: is_open
+    condition: device
+    device_id: 0c592d9171825fe094c138616e921c3b
+    entity_id: 0cf842280b6e7b56abc0a255c35cfd57
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 10
+  actions:
+  - action: script.turn_on_off_garagemotor_script
+    metadata: {}
+    data: {}
+  mode: single
+- id: '1735529831658'
+  alias: Turn Off Dishwasher after 2h:40min
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - binary_sensor.dishwasher_running
+    from: 'off'
+    to: 'on'
+    for:
+      hours: 2
+      minutes: 40
+      seconds: 0
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: ac7d78d015a451cbd6c11cd849edad10
+    entity_id: 94146707c65b0cd6231019e8a9e020b5
+    domain: switch
+  - delay:
+      hours: 2
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - type: turn_on
+    device_id: ac7d78d015a451cbd6c11cd849edad10
+    entity_id: 94146707c65b0cd6231019e8a9e020b5
+    domain: switch
+  mode: single
+- id: '1737432302641'
+  alias: Movement after 11:59 MB aisle
+  description: Movement detected after 11:59 MB aisle
+  triggers:
+  - type: occupied
+    device_id: b9b9a8e5d82ac064654845c302f10e4e
+    entity_id: 1bee703f399b641807ad27f049bff993
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 3
+  conditions:
+  - condition: time
+    after: '23:59:00'
+    before: 05:30:00
+    weekday:
+    - sun
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    - sat
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data: {}
+    target:
+      device_id: bee4e705df3a7cba9ec733c534136ac1
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - action: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id: bee4e705df3a7cba9ec733c534136ac1
+  mode: single
+#- id: '1758422161490'
+#  alias: Notify Door Open at Night
+#  description: ''
+#  triggers:
+#  - trigger: state
+#    entity_id:
+#    - group.all_doors
+#  conditions:
+#  - condition: sun
+#    after: sunset
+#  actions:
+#  - action: notify.send_message
+#    metadata: {}
+#    data:
+#      message: '"Door open at night: {{ states(''group.all_doors'') }}"'
+#  - action: notify.mobile_app_iphone_381
+#    metadata: {}
+#    data:
+#      message: '"Door open at night: {{ states(''group.all_doors'') }}"'
+#      title: Door open at night
+#  mode: single

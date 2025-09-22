@@ -1,0 +1,34 @@
+timeforbed:
+  alias: Time For Bed
+  sequence:
+  - condition: time
+    before: 00:00:00
+    after: '20:30:00'
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  mode: single
+  icon: mdi:bed-clock
+turn_on_off_garagemotor_script:
+  alias: Turn On/Off GarageMotor Script
+  sequence:
+  - action: switch.turn_on
+    metadata: {}
+    data: {}
+    target:
+      device_id: 0bfee9aab709f1d5bc16679dda53ede1
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  - action: switch.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id: 0bfee9aab709f1d5bc16679dda53ede1
+  description: 'GarageMotor - Turn On - wait 500ms - Turn Off '
+  icon: mdi:garage-variant
